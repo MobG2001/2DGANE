@@ -1,15 +1,15 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Mob
 {
     /// <summary>
-    /// µo®g¨t²Î°ò©³
+    /// ç™¼å°„ç³»çµ±åŸºåº•
     /// </summary>
     public class FireSystemBase : MonoBehaviour
     {
-        [SerializeField, Header("¤l¼u¹w»sª«")]
+        [SerializeField, Header("å­å½ˆé è£½ç‰©")]
         private GameObject prefabBullets;
-        [SerializeField, Header("¤l¼u¥Í¦¨ÂI")]
+        [SerializeField, Header("å­å½ˆç”Ÿæˆé»")]
         private Transform pointspawn;
 
         protected void SpawnBullet()

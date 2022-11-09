@@ -1,16 +1,28 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 /// <summary>
-/// ¶Ë®`¨t²Î
+/// å‚·å®³ç³»çµ±
 /// </summary>
 namespace Mob
 {
     public class DamageSystem : MonoBehaviour
     {
-        [SerializeField, Header("Ãz¬µ¹w»sª«")]
+        [SerializeField, Header("çˆ†ç‚¸é è£½ç‰©")]
         private GameObject prefabExplosion;
-        [SerializeField, Header("¸I¨ì·|Ãz¬µªº¦WºÙ")]
+        [SerializeField, Header("ç¢°åˆ°æœƒçˆ†ç‚¸çš„åç¨±")]
         private string nameTarget;
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            //print("ç¢°æ’:" + collision.gameObject);
+
+            if (collision.gameObject.name.Contains(nameTarget))
+            {
+                Instantiate(prefabExplosion, transform.position, transform.rotation);
+
+                Destroy(gameObject);
+            }
+        }
     }
 
 }

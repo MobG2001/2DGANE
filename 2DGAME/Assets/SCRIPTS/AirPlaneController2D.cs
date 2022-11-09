@@ -1,22 +1,22 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Mob
 {
     /// <summary>
-    /// 2D ­¸¾÷±±¨î¾¹
+    /// 2D é£›æ©ŸæŽ§åˆ¶å™¨
     /// </summary>
     public class AirPlaneController2D : MonoBehaviour
     {
-        [Header("²¾°Ê³t«×")]
+        [Header("ç§»å‹•é€Ÿåº¦")]
         [SerializeField, Range(0, 10)]
         private float speedVertical = 3.5f;
         [SerializeField, Range(0, 10)]
         private float speedHorizontal = 4f;
-        [Header("¹Ï¤ù")]
+        [Header("åœ–ç‰‡")]
         [SerializeField] private Sprite pictureUp;
         [SerializeField] private Sprite pictureMiddle;
         [SerializeField] private Sprite pictureDown;
-        [SerializeField, Header("¹Ï¤ù´è¬V¤¸¥ó")]
+        [SerializeField, Header("åœ–ç‰‡æ¸²æŸ“å…ƒä»¶")]
         private SpriteRenderer spr;
 
         private void Update()

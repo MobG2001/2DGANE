@@ -1,13 +1,13 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace Mob
 {
     /// <summary>
-    /// ¼Ä¤Hµo®g¨t²Î
+    /// æ•µäººç™¼å°„ç³»çµ±
     /// </summary>
     public class EnemyFireSystem : FireSystemBase
     {
-        [SerializeField, Header("¥Í¦¨¤l¼u¶¡¹j"), Range(0, 3)]
+        [SerializeField, Header("ç”Ÿæˆå­å½ˆé–“éš”"), Range(0, 3)]
         private float interval = 1.5f;
 
         private void Awake()
